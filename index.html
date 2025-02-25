@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+        @font-face {
+                font-family: 'poppins';
+                src: url('poppins/Poppins-Light.ttf');
+            }
+
+        #signin-link{
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    
+        #privacy-policy{
+            
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #terms{
+            
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #password{
+            margin-top: 10;
+        }
+
+        form{
+            font-size: 80%;
+            margin-top: 40px;
+        }
+
+        body{
+
+            width: 500px;
+            height: 720px;
+            padding: 40px;
+            box-shadow: #D8D5D5 4px 4px 4px 4px, -4px -4px 4px 4px rgb(221, 218, 218);
+            border-color: #CECACA;          
+
+            margin: 100px  auto;
+            font-family: 'poppins' , sans-serif;
+        }
+        .terms-privacy{
+            margin-top: 5px;
+        }
+        input{ 
+            width: 460px;
+            height: 35px;
+            margin-top: 10px;
+            margin-bottom: 28px;
+        }
+        
+        #signup_button{
+            margin-top: 50px;
+            width: 460px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer; 
+        }
+        #signup_button:hover{
+            background-color: white;
+            color: black;
+            border: 2px solid ;
+        }
+        .signup-lines{
+        position:relative;
+        margin: 50px auto;
+        text-align: center;
+        }
+
+        .signup-lines:before{
+        content:" ";
+        display: block;
+        height: 2px;
+        width: 170px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        background: darkgray;
+        }
+
+       .signup-lines:after{
+        content:" ";
+        display: block;
+        height: 2px;
+        width: 140px;
+        position: absolute;
+        top: 50%;
+        left:65%;
+        right: 8%;
+        background: darkgrey;
+        }
+        .icons{
+            width:70px;
+            height:70px;
+            color: black;
+            justify-content: center;
+            margin: 0 210px;
+            display: flex; gap: 80px;
+            filter: grayscale(100%);
+    
+        }
+
+        .icons:hover{
+            color: black;
+            filter: drop-shadow(20px);
+        }
+    
+        .google{
+            text-decoration: none;
+            border-radius: 0%;
+
+        }
+        
+        
+        
+            
+    </style>
+</head>
+
+<body>
+    <!--already signed up option -->
+    
+        <p> Already have an account? <a href="http://127.0.0.1:5502/signin.html" id="signin-link" font-size: 30%> Sign in</a> </p>  
+
+    <h1> Sign Up </h1>
+
+    <form action="signin.html" method="get"> 
+            <label for="name"><b>Name: </b></label><br>
+            <input type="text" id="name" placeholder="Enter first name"/>
+                <br>
+            <label for="email"><b>Email: </b></label><br>
+            <input type="email" id="email" placeholder="Enter email"/>
+                <br>
+            <label for="password"><b>Password</b></label><br>
+            <input type="password" id="password" placeholder="Enter password"/><br>
+        
+            <input style="width: 15px; height: 15px;" type="checkbox" id="agreement"/>
+            <label for="agreement" id="privacy-and-term">I've Read And Agree With 
+                <a href="https://policies.google.com/terms" id="terms">The Terms of Service </a> And 
+                <a href="https://policies.google.com/privacy" id="privacy-policy"> Privacy Policy </a></lable><br>
+            <div class="terms-privacy">
+            <button type="signup" id="signup_button">Sign Up</button>
+            <h3 class="signup-lines"> Or Sign Up With  </h3>
+           
+
+    </form>
+
+    <div class="icons">
+        <a href="https://accounts.google.com/lifecycle/steps/signup/name?continue=https://myaccount.google.com/email&ddm=1&dsh=S-1791364603:1740471084660906&flowEntry=SignUp&flowName=GlifWebSignIn&followup=https://myaccount.google.com/email&ifkv=ASSHykrlcpgue0JyVOc5fLT99JcxDe7QTRhJbpF2GG5rGlHpTQ-hcNt8KL56fHzwZRLLLO_iHrTDFA&osid=1&service=accountsettings&TL=ADgdZ7RN_6IMnRP8kauT1dQSKd7J9I4Dit4mNAQV9L18Rif1IlkYqhZdwGjw_5U5">
+       
+            <i class="fa-brands fa-google" style="font-size:20px";> </i>
+        </a>
+        <a href="https://www.facebook.com/r.php?entry_point=login" >
+        
+            <i class="fa-brands fa-facebook" style="font-size:20px";> </i>
+        </a>
+
+    </div>
+
+</body>
+</html>
